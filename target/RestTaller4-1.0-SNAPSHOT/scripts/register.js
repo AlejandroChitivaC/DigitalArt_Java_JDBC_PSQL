@@ -1,3 +1,4 @@
+
 var foto = document.getElementById("foto-file");
 var cloud_url = "https://api.cloudinary.com/v1_1/dilwbkj5s/upload";
 
@@ -49,7 +50,7 @@ function getData() {
       title: "Oops...",
       text: "Todos los campos son requeridos",
     });
-  } else {
+  }
 
     fetch(`../api/users/register`, {
       method: "POST",
@@ -63,5 +64,5 @@ function getData() {
 
     let rol = data.rol;
     window.location = `../web/perfil${rol}.html`;
-  }
+
 }

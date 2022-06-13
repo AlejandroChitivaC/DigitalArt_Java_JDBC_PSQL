@@ -62,6 +62,8 @@ body {
       transform: scale(1);
     }
   }
+
+ 
   
   .dropdown-menu {
     background: #3a3eb4;
@@ -73,7 +75,4 @@ body {
   .navbar-brand {
     height: 80px;
     width: 70px;
-  }
-  .container {
-    
   }

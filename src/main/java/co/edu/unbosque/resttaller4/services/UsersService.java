@@ -103,6 +103,8 @@ public class UsersService {
         }
         return user;
     }
+    //Registering a new user
+
     public UserApp newUserApp(UserApp user) {
         System.out.println(user.toString());
         // Object for handling SQL statement
@@ -160,10 +162,6 @@ public class UsersService {
         else {
             return null;
         }
-
-
     }
-
-
 }
 

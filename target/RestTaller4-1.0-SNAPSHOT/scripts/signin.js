@@ -14,7 +14,7 @@ formulario.addEventListener("submit", async (esc) => {
           text: "Has iniciado sesión correctamente",
           icon: "success",
       })
-      window.location.href = "../index.html";
+        
   } else {
       Swal.fire({
           title: "Usuario no encontrado",
