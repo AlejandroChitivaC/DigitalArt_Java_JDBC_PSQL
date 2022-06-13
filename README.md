@@ -11,14 +11,14 @@
 
 * **Recargar cuenta:** Si es un usuario comprador, se le debe permitir recargar su wallet con FCoins.
 
-* **Ver piezas:** Si es un usuario comprador, podrá ver la lista de piezas disponibles con todos sus atributos, incluyendo el nombre, imágen, propietario, precio, colección y si está disponible para la venta.FALTA LIMITARLO SÓLO AL COMPRADOR
+* **Ver piezas:** Si es un usuario comprador, podrá ver la lista de piezas disponibles con todos sus atributos, incluyendo el nombre, imágen, propietario, precio, colección y si está disponible para la venta.
 
 * **Comprar pieza:** A partir de la lista de piezas, un comprador podrá comprar una pieza de arte que esté disponible para la venta. Para realizar la compra, el comprador debe tener la cantidad requerida de FCoins. Una vez que se realiza la compra, se debe registrar el ingreso y salida de FCoins de las wallets del vendedor y del comprador, según corresponda. 
 
 * **Habilitar/deshabilitar para la venta:** El propietario de una pieza, sea artista o comprador, podrá habilitar o deshabilitar en cualquier momento la posibilidad de que otro comprador adquiera la pieza de arte.
 
-* **Cambiar precio:** El propietario de una pieza, sea artista o comprador, podrá cambiar en cualquier momento el valor de la pieza de arte. PROBABLEMENTE LO HAGA
+* **Cambiar precio:** El propietario de una pieza, sea artista o comprador, podrá cambiar en cualquier momento el valor de la pieza de arte.
 
-* **Dar like:** Cualquier usuario comprador podrá dar like a la pieza de arte de su interés. Tenga en cuenta que un usuario puede dar solo un like a una pieza. PROBABLEMENTE LO HAGA
+* **Dar like:** Cualquier usuario comprador podrá dar like a la pieza de arte de su interés. Tenga en cuenta que un usuario puede dar solo un like a una pieza. 
 
 
