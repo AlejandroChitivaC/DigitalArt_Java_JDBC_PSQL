@@ -104,18 +104,26 @@ public class UsersService {
         return user;
     }
     public UserApp newUserApp(UserApp user) {
-
         System.out.println(user.toString());
         // Object for handling SQL statement
         PreparedStatement stmt = null;
         PreparedStatement stmt1 = null;
+        PreparedStatement stmt2 = null;
 
         // Data structure to map results from database
         if (user != null) {
 
             try {
 
+                stmt2= this.conn.prepareStatement("INSERT INTO Usuario (email, password, username, role) VALUES (?, ?, ?, ?)");
+                stmt2.setString(1, user.getEmail());
+                stmt2.setString(2, user.getPassword());
+                stmt2.setString(3, user.getUsername());
+                stmt2.setString(4, user.getRole());
+                stmt2.executeUpdate();
+                stmt2.close();
                 if (user.getRole().equals("Artista")) {
+                    System.out.println("Es artista");
                     stmt = this.conn.prepareStatement("INSERT INTO Artista (Email, Password,Username)\n" +
                             "VALUES (?,?,?)");
                     stmt.setString(1, user.getEmail());
@@ -126,11 +134,12 @@ public class UsersService {
                 }
 
                 else if (user.getRole().equals("Comprador")) {
+                    System.out.println("Es comprador");
                     stmt1 = this.conn.prepareStatement("INSERT INTO Comprador(Email, Password,fcoins)\n" +
                             "VALUES (?,?,?)");
                     stmt1.setString(1, user.getEmail());
                     stmt1.setString(2, user.getPassword());
-                    stmt1.setString(3, ("0.0"));
+                    stmt1.setInt(3, (0));
                     stmt1.executeUpdate();
                     stmt1.close();
                 }

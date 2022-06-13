@@ -1,4 +1,4 @@
-let info_p = document.getElementById("info-p");
+let info_p = document.getElementById("#info-p");
 let data = sessionStorage.getItem("newUser");
 let userData = JSON.parse(data);
 

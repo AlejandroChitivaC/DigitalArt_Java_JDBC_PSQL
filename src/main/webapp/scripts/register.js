@@ -42,6 +42,7 @@ function getData() {
     fcoins: document.getElementById("Fcoins").value,
   };
 
+
   if (data.name === "" || data.username === "" || data.email === "" || data.password === "" || data.rpassword === "" || data.imagen === ""||data.rol==="") {
     Swal.fire({
       icon: "error",
@@ -50,13 +51,13 @@ function getData() {
     });
   } else {
 
-    // fetch(`../api/users/register`, {
-    //   method: "POST",
-    //   body: JSON.stringify(data),
-    //   headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    //     })
-    //   .then((resp) => console.log(resp))
-    //   .catch((error) => console.log(error));
+    fetch(`../api/users/register`, {
+      method: "POST",
+      body: JSON.stringify(data),
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        })
+      .then((resp) => console.log(resp))
+      .catch((error) => console.log(error));
 
     sessionStorage.setItem("newUser", JSON.stringify(data));
 

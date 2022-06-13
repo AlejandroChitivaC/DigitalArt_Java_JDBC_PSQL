@@ -71,8 +71,8 @@
   <div class="container">
     <div class="title">Registro</div>
     <div class="content">
-      <!-- <form id="regform" action="http://localhost:8080/RestTaller4-1.0-SNAPSHOT/api/users/register" method="post"> -->
-      <form id="regform">
+      <form id="regform" method="post">
+        
         <div class="user-details">
           <div class="input-box">
             <span class="details">Nombre Completo</span>
@@ -113,7 +113,7 @@
             <input name="Fcoins" id="Fcoins" type="number" value="0.0" placeholder="Cantidad Fcoins (Recomendada 0) "
               required />
           </div>
-        <a href="../web/login.html">Ya tengo una cuenta</a>
+          <a href="../web/login.html">Ya tengo una cuenta</a>
         </div>
         <div class="button" onclick="getData()">
           <a>
@@ -126,7 +126,7 @@
 </body>
 <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 <script src="https://kit.fontawesome.com/dac7c8fdd5.js" crossorigin="anonymous"></script>
-<script src="../scripts/signupv2.js"></script>
+<script src="../scripts/register.js"></script>
 <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
 <footer></footer>

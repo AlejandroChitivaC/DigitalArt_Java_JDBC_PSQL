@@ -9,14 +9,14 @@ let msg = "Solo puedes dar un like por obra de arte";
 function contar() {
 let contador = 0;
   document.getElementById("btnlikes").innerHTML = contador=1;
-  if ((contador == 1) ) {
+  if ((contador =! 0) ) {
     Swal.fire({
       title: "¡Le has dado like a esta obra de arte!",
       text: "¡Gracias por darle un like a esta obra de arte!",
       icon: "success",
     })
   }
-  else if (contador>1) {
+  else if (contador===1) {
     Swal.fire({
       title: "¡Ya has dado like a esta obra de arte!",
       text: "¡Gracias por darle un like a esta obra de arte!",
@@ -40,7 +40,7 @@ const getData = async () => {
                 <p>${"Colección: " + coleccion}</p>
                 <p>${descripcion}</p>
                 <button id="btncomprar" style="border-radius:50px;width: 100px;height: 60px;margin-left: 150px;" class="btn btn-primary">Comprar</button>         
-                <button id="btnlikes" class="btn btn-primary" style="border-radius:50px;width: 100px;height: 60px;margin-left: 150px; margin-top: 20px" onclick="contar()">${likes} Like</button>
+                <button id="btnlikes" class="btn btn-primary" style="border-radius:50px;width: 100px;height: 60px;margin-left: 150px; margin-top: 20px" onclick="contar()"> <i class="fa fa-thumbs-up" aria-hidden="true"></i> ${likes} Like</button>
             </div> 
         `;
   });

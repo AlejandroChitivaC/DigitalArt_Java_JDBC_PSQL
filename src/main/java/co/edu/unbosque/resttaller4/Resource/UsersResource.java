@@ -67,10 +67,10 @@ public class UsersResource {
     @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
     @Produces(MediaType.APPLICATION_JSON)
     public Response createForm(
-            @QueryParam("email") String email,
-            @QueryParam("password") String password,
-            @QueryParam("username") String username,
-            @QueryParam("role") String role
+            @FormParam("email") String email,
+            @FormParam("password") String password,
+            @FormParam("username") String username,
+            @FormParam("role") String role
 
     ) {
         Connection conn = null;

@@ -20,7 +20,7 @@ CREATE TABLE Comprador
 (
     email        VARCHAR NOT NULL,
     password     VARCHAR NOT NULL,
-    fcoins       INT     NOT NULL,
+    fcoins       INT NOT NULL,
     id_comprador SERIAL  NOT NULL,
     PRIMARY KEY (id_comprador),
     FOREIGN KEY (email)
