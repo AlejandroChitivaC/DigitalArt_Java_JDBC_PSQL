@@ -72,6 +72,7 @@ public class UsersResource {
             @FormParam("username") String username,
             @FormParam("role") String role
 
+
     ) {
         Connection conn = null;
         List<UserApp> userapp = null;
