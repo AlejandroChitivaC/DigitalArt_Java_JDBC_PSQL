@@ -3,7 +3,7 @@
 * **Sebastian Castillo Chaves**
 * **María Alejandra Angarita Barrantes**
 
-* Crear un usuario artista o comprador. Para poder autenticarse en la tienda, todos los usuarios deben tener un correo electrónico y una contraseña. Adicionalmente, deben tener un nombre y una cantidad inicial de FCoins igual a 0.0. FALTA QUE LOS DATOS QUE SE INGRESAN EN EL FORM SE PERSISTAN EN LA BASE DE DATOS DEPENDIENDO EL ROL.
+* Crear un usuario artista o comprador. Para poder autenticarse en la tienda, todos los usuarios deben tener un correo electrónico y una contraseña. Adicionalmente, deben tener un nombre y una cantidad inicial de FCoins igual a 0.0.
 
 * Autenticar usuario. Utilizando el correo electrónico y la contraseña, el usuario podrá autenticarse en la tienda. Dependiendo de su rol deberá ser dirigido a una interfaz diferente.
 
