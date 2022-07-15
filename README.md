@@ -1,5 +1,5 @@
 # DigitalArt_Java_JDBC
- **Alejandro Chitiva Castillo**, **Sebastian Castillo Chaves**, **María Alejandra Angarita Barrantes**
+ **Alejandro Chitiva Castillo**
 
 * **Crear un usuario artista o comprador**: Para poder autenticarse en la tienda, todos los usuarios deben tener un correo electrónico y una contraseña. Adicionalmente, deben tener un nombre y una cantidad inicial de FCoins igual a 0.0.
 
